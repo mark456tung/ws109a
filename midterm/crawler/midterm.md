@@ -101,20 +101,20 @@ function urlToFileName(url) {
 ## 描述與步驟
 
 * code
-    * 程式碼參考鍾誠老師gitlab上程式碼 了解程式碼並添加註釋
-    * 步驟:
-        * 安裝套件: npm install URIjs
-        * 開始爬蟲：node nodecrawler.js "網址"(不可用https協議的網址)
+  * 程式碼參考鍾誠老師gitlab上程式碼 了解程式碼並添加註釋
+  * 步驟:
+      * 安裝套件: npm install URIjs
+      * 開始爬蟲：node nodecrawler.js "網址"(不可用https協議的網址)
 
 
 
 
 ## 來源:參考老師的gitlab上程式碼
-**來源及理解程度。
-* 1.資料參考[網站設計進階](https://gitlab.com/ccckmit/course/-/wikis/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%9B%B8%E7%B1%8D/%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88/httpCrawler)
-* 2.對這個程式原始碼我大部分可以理解
-* 3.目前自己實在無法從生出一個這種功能的爬蟲(我只會爬單一(或多個格式相同)網頁內容)，這是從鍾誠老師的blog照打上來後添加註釋的
-* 4.以下是我查到的或許有關於這類型爬蟲的資料的先備知識，自己都有讀過一遍並大部分理解
+* 來源及理解程度。
+  * 1.資料參考[網站設計進階](https://gitlab.com/ccckmit/course/-/wikis/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%9B%B8%E7%B1%8D/%E7%B6%B2%E7%AB%99%E8%A8%AD%E8%A8%88/httpCrawler)
+  * 2.對這個程式原始碼我大部分可以理解
+  * 3.目前自己實在無法從生出一個這種功能的爬蟲(我只會爬單一(或多個格式相同)網頁內容)，這是從鍾誠老師的blog照打上來後添加註釋的
+  * 4.以下是我查到的或許有關於這類型爬蟲的資料的先備知識，自己都有讀過一遍並大部分理解
     * [DFS及BFS(深度優先搜尋及廣度優先搜尋演算法)](https://magiclen.org/dfs-bfs/)
     * [sitemap](https://ranking.works/%E6%8A%80%E8%A1%93SEO/sitemap)
     * [python-sitemap爬蟲](https://blog.csdn.net/github_35160620/article/details/52537210?ops_request_misc=%25257B%252522request%25255Fid%252522%25253A%252522161069497916780255290392%252522%25252C%252522scm%252522%25253A%25252220140713.130102334..%252522%25257D&request_id=161069497916780255290392&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-2-52537210.pc_search_result_hbase_insert&utm_term=sitemap%20%E7%88%AC%E8%9F%B2)
