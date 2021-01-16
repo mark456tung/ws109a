@@ -26,6 +26,7 @@ function crawNext() {
     return;
   }
   c.log('url[%d]=%s', urlIdx, url);
+  fs.writeFileSync("resulturl.json", JSON.stringify(urlList));
   urlMap[url] = { downlioad: false };
   pageDownload(url, function (data) {
     var page = data.toString();
@@ -44,6 +45,7 @@ function crawNext() {
       try {
         var refUri = URI(refs[i]).absoluteTo(url).toString();
         c.log('ref=%s', refUri);
+
         if (refUri !== undefined && urlMap[refUri] === undefined)
           urlList.push(refUri);
       } catch (e) { } //處理例外
