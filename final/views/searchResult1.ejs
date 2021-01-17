@@ -1,0 +1,18 @@
+<%- include('header.ejs') %>
+<div id=header>
+  <form action="/search" method="get">
+    <div class="form-box">
+        <input class="search-field business" type="text" name="query" placeholder="">
+        <input type="submit"  class="search-btn" value="search">
+    </div>
+</form>  
+</div>
+<ul id="posts">
+  <% for (let doc of docs) { %>
+    <li>
+      <h2><a href="<%= doc._source.url %>"><%=doc._title%></a></h2>
+      <p><%= doc._source.page.substring(0,150) %></p>
+    </li>
+  <% } %>
+</ul>
+<%- include('footer.ejs') %>
